@@ -1,0 +1,678 @@
+ *{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+*/
+body{
+	font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:700;
+}
+.container{
+	width:1300px;
+	margin:0 auto;
+	padding: 0 15px;
+}
+.container-full{
+	width:100%;
+	margin:0 auto;	
+}
+.container:before,
+.container:after,
+.container-full:before,
+.container-full:after{
+	content:"";
+	display:table;
+	clear:both;
+	}
+.section-padding {
+	padding-top:120px;
+	padding-bottom:120px;
+}
+
+.col-50{
+	width:50%;
+	float:left;
+	padding: 0 25px;
+}
+.col-33{
+	width:33.33%;
+	float:left;
+	padding: 0 25px;
+}
+.col-25{
+	width:25%;
+	float:left;
+	padding: 0 25px;
+}
+
+
+.top-header{
+	background:#1D1D1D;
+	padding:10px 0;
+}
+.number{
+	color:#B6B6B6;
+	font-size:14px;
+	font-weight:300;
+	text-decoration:none;
+	transition:.3s
+}
+.social{
+	display:inline-block;
+	color:#B6B6B6;
+	list-style:none;
+	margin:0 30px;
+}
+.social li{
+	display:inline-block;
+	font-size:14px;
+	margin:0 5px;
+}
+.social i{
+	color:#B6B6B6;
+	transition:.3s
+}
+
+.login-register a {
+	color:#B6B6B6;
+	text-decoration:none;
+	float:right;
+	 margin-left:20px;
+	 transition:.3s
+}
+.login-register i{
+	margin-right:10px;
+}
+.number:hover,
+.social i:hover,
+.login-register a:hover {
+	color:#FF1949;
+}
+
+/* ====main menu start====*/
+
+.col-30{
+	width:30%;
+	float:left;
+	padding: 0 25px;
+}
+.col-70{
+	width:70%;
+	float:left;
+	padding: 0 25px;
+}
+.col-100{
+	width:100%;
+	float:left;
+	padding: 0 25px;
+}
+header{
+	background:#fff;
+	padding:20px 0;
+	}
+.logo img {
+	width:200px;
+}
+ul.main-menu{
+	list-style:none;
+	padding-top:10px;
+	float:right;
+}
+.main-menu li{
+	display:inline-block;
+}
+.main-menu li a{
+	text-decoration:none;
+	text-transform:capitalize;
+	color:#252525;
+	font-size:17px;
+	font-weight:600;
+	font-family: 'Poppins', sans-serif;
+	margin:0 0 0 40px;
+	transition: .3s;
+	border-bottom:2px solid transparent;
+	
+}
+.main-menu li a:hover{
+	border-bottom:2px solid #FE1949;
+}
+.active{
+	border-bottom:2px solid #FE1949 !important;
+}
+.menu-icon{
+	margin-left:10px !important;
+}
+.menu-icon:hover{
+	border-bottom:2px solid transparent !important;
+	color:#FE1949;
+}
+/* ====main menu end====*/
+
+/* ====home css start====*/
+.home{
+	background:url(../img/home/01.jpg);
+	padding:200px;
+	color:#fff;
+}	
+
+.home h1{
+	font-size:92px;
+	font-weight:700;
+	line-height:99px;
+	position:relative;
+}
+.home h1:before{
+	content: "";
+	position:absolute;
+	height:3px;
+	width:70px;
+	background:#fff;
+	bottom:0;
+	left:0;
+	
+}
+
+p{
+	font-size:17px;
+	font-weight:300;
+	line-height:30px;
+	padding:40px 0;
+}
+.btn{
+	font-size:17px;
+	font-weight:600;
+	line-height:34px;
+	border:2px solid #fff;
+	color:#fff;
+	padding:20px 40px;
+	display:inline-block;
+	text-decoration:none;
+	margin-right:30px;
+}
+.btn i{
+	visibility:hidden;
+}
+.btn:hover i{
+	visibility:visible;
+}
+.btn:hover{
+	text-decoration:underline;
+}
+.btn-active{
+	background:#FE1949;
+	border:2px solid #FE1949;
+}
+/* ====home css end====*/
+/* ====courses css start====*/
+
+.courses-menu {
+	list-style:none;
+	padding-bottom:40px;	
+}
+.courses-menu li {
+	display:inline-block;
+	text-transform:capitalize;
+	font-size:17px;
+	color:#252525;
+	margin-right:20px;
+	cursor:pointer;	
+}
+.courses-menu li i{
+	color:red;
+}
+.courses-menu li:hover{
+	text-decoration:underline;
+}
+
+
+.courses-home{
+	width:100%;
+	height:300px;
+	position:relative;
+	overflow:hidden;
+	transition:.5s;
+}
+.courses-home img{
+	width:100%;
+	height:100%;
+}
+.crs-ctg{
+	position:absolute;
+	color:#fff;
+	background:#FD1949;
+	text-transform:capitalize;
+	bottom:30px;
+	right:0;
+	padding:15px 20px;
+	font-size:14px;
+	text-decoration:none;
+	transition:.3s;	
+}
+.crs-ctg:hover{
+	background:#252525;
+}
+.courses-box:hover img{
+	transform:scale(1.1);
+}
+.courses-details h3 a {
+	font-size:20px;
+	color:#252525;
+	transition:.3s;
+	text-transform:capitalize;
+	text-decoration:none;
+	margin:20px 0;
+	display:inline-block;
+}
+.courses-details h3 a:hover{
+	color:#FE1949;
+}
+.instruct{
+	font-size:15px;
+	text-transform:capitalize;
+	color:#252525;
+	padding-bottom:20px;
+	display:inline-block;
+	position:relative;	
+}
+.courses-details p{
+	font-size:15px;
+	color:#444;
+	line-height:24px;
+}
+.courses-footer{
+	font-size:13px;
+	padding-bottom:30px;
+}
+.courses-footer a {
+	color:#252525;
+	text-transform:capitalize;
+	text-decoration:none;
+}
+.courses-footer i {
+	padding-right:4px;
+}
+.course-fee{
+	float:right;
+	font-size:20px;
+	color:#FF1949 !important;
+	font-weight:500;
+}
+.courses-details h3{
+	position:relative;
+}
+.instruct:before{
+	content:"";
+	position:absolute;
+	top:30px;
+	background:red;
+	height:3px;
+	width:30px;
+	transition:.3s;
+}
+.courses-box:hover .instruct::before{
+	width:60px;
+}
+
+/* ====courses css end====*/
+
+/* ====expert starts====*/
+
+.expert-box{
+	width:100%;
+	height:490px;
+	background:#ddd;
+	padding:180px 200px;;
+}
+
+.expert-box-01{
+	background:#FE1949;
+	color:#FFF;
+}
+.expert-box-02{
+	background:url("../img/expert/02.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+.expert-box-03{
+	background:url("../img/expert/03.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+.expert-box-04{
+	background:url("../img/expert/04.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+.expert .col-50{
+	padding:0;
+}
+.expert-box h3{
+	font-size:45px;
+	font-weight:700;
+	padding-bottom:40px;
+}
+.expert-box-01 a{
+	font-size:17px;
+	font-weight:500;
+	color:#fff;
+	text-transform:capitalize;
+	padding-top:50px;
+}
+.expert-box-04 a{
+	font-size:17px;
+	font-weight:500;
+	color:#252525 ;
+	text-transform:capitalize;
+	padding-top:50px;
+}
+
+/* ====expert ends====*/
+/* ====teachers start====*/
+
+img{
+	width:100%;
+	height:auto;
+}
+.section-title h2{
+	font-size:45px;
+	color:#252525;	
+	padding-bottom:40px;
+	position:relative;
+}
+.section-title h2:before{
+	content:"";
+	position:absolute;
+	height:3px;
+	width:40px;
+	left:0;
+	background:#FE1949;
+	bottom:25px;
+}
+.section-title p{
+	font-size:19px;
+	color:#333;	
+	line-height:29px;
+	font-weight:300;
+}
+.section-title{
+	padding-bottom:80px;
+}
+.teacher-single{
+	display:flex;
+	margin-bottom:30px;
+}
+.teacher-single-left{
+	height:160px;
+	width:160px;
+}
+.teacher-single-right h3 a{
+	font-size:20px;
+	color:#252525;	
+	text-transform:capitalize;
+	text-decoration:none;
+	margin-bottom:20px !important;
+}
+.teacher-single-right h3 a:hover{
+	color:red;
+}
+.teacher-single-right span{
+	font-size:15px;
+	color:#252525;	
+	text-transform:capitalize;
+}
+.teacher-single-right ul{
+	list-style:none;
+}
+.teacher-single-right ul li{
+	display:inline-block;
+}
+.teacher-single-right ul li a {
+	font-size:14px;
+	padding-right:10px;
+	margin-top:20px;	
+}
+.teacher-single-right ul li a:hover {
+		color:red;
+}
+
+.teacher-single-right{
+	color:#252525;
+	padding:30px;
+}
+.teachers.section-padding{
+	padding-bottom:90px;
+}
+
+
+/* ====teacher ends====*/
+
+/* ====review css starts====*/
+
+.review {
+	background:url("../img/review-bg.jpg");
+}
+.review-single{
+	display:flex;
+}
+.review-image{
+	width:150px;
+	height:150px;
+	border-radius:50%;	
+}
+.review-feedback{
+	color:#fff;
+	padding-left:50px;
+	display:inline-block;
+}
+.review-feedback h2{
+	font-size:45px;
+	line-height:54px;
+	font-weight:700;
+}
+.review-feedback span{
+	font-size:19px;
+	padding-top:5px;
+}
+
+/* ====review css ends====*/
+
+/* ====tour css start====*/
+.tour-list{
+	list-style:none;
+}
+.tour-title h3{
+	font-size:45px;
+	font-weight:700;
+	position:relative;
+}
+.tour-title h3:before{
+	content:"";
+	position:absolute;
+	height:3px;
+	width:80px;
+	left:0;
+	background:red;
+	bottom:-5px;
+	
+}
+.tour-list i{
+	color:red;
+	padding-right:20px;
+}
+.tour-title p{
+	font-size:19px;
+	font-weight:300px;
+	color:#333333;
+}
+.tour-list li{
+	color:#444444;
+	font-size:15px;
+	font-weight:500px;
+	margin:10px;
+}
+
+
+
+/* ====tour css ends====*/
+/* ====Form css starts====*/
+.form{
+	background:url("../img/form-bg.jpg");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	position:relative;
+	z-index:01;	
+}
+.form-left{
+	background:#FE1949;
+	color:#FFF;
+	padding:98px 20px;
+	margin-left:70px;
+	
+}
+.form-left h3{
+	font-size:45px;
+	margin:50px;
+	
+}
+.form-right{
+	background:url("../img/form-right-bg.jpg");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	padding:93px 70px;
+	margin-right:100px;
+	position:relative;
+}
+.form-right input{
+	width:100%;
+	padding:15px;
+	border:0;
+	border-bottom:1px solid #ddd;
+	margin-top:10px;
+}
+.form-right h4{
+	font-size:28px;
+	text-transform:capitalize;
+	color:#252525;
+}
+.form-right input[type="submit"]{
+	width:150px;
+	background:#252525;
+	padding:20px 0;
+	font-size:16px;
+	margin-top:60px;
+	cursor:pointer;
+	color:#fff;			
+}
+.form-right input[type="submit"]:hover{
+	background:red;
+}
+.form .col-50{
+	padding:0;
+}
+.form-right i {
+	position:absolute;
+	font-size:60px;
+	color:#fff;
+	top:45%;
+	left:-17px;
+}
+/* ====Form css ends====*/
+
+/* ====Footer css starts====*/
+
+.footer-left{
+	list-style:none;	
+}
+.address{
+	margin-bottom:20px;	
+}
+
+.skills{
+	margin:20px 0;
+}
+
+.footer{
+	background:#252525;
+	color:#fff;
+	}
+
+.footer-single a{
+	color:#fff;
+	text-decoration:none;
+	font-size:15px;
+	text-transform:capitalize;
+	
+}
+.footer-single h1{
+	color:#fff;
+	text-decoration:none;
+	font-size:20px;
+	text-transform:capitalize;
+	font-weight:700;
+	
+}
+
+.footer-single a:hover{
+	color:#FE1949;
+}
+.footer-single p{
+	font-size:14px;
+	font-weight:300;
+	padding-bottom:20px;
+	padding-top:10px;
+}
+.footer-course h4 a {
+	padding-bottom:30px;
+}
+
+}
+.footer-course h5 a {
+	font-size:14px;
+	font-weight:300;
+	padding-bottom:30px;
+}
+
+.footer-support h4{
+	font-size:15px;
+	font-weight:300;
+	padding-bottom:20px;
+}
+
+.footer-support h1{
+	padding-bottom:20px;
+}
+/* ====Footer css starts====*/
+/* ====copyright css starts====*/
+.copyright{
+	background:#1D1D1D;
+	color:#fff;
+	padding:20px 0 50px 0;
+}
+.copyright-left a{
+	color:#fff;
+	text-decoration:none;
+}
+.copyright-left a:hover{
+	color:#FE1949;
+	text-decoration:underline;
+}
+.copyright-right {
+	float:right;
+}
+
+/* ====copyright css ends====*/
